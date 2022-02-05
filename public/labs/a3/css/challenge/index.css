@@ -1,0 +1,354 @@
+.rotate-paragraph {
+width: 250px;
+height: 250px;
+transform: rotate(90deg);
+}
+.rotate-list {
+transform: rotate(12deg);
+width: 100px;
+background-color: red;
+color: white;
+}
+
+
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-image2 {
+    position: relative;
+    left: 20px;
+    transform: rotate(10deg);
+}
+
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+
+
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.my-gradients-linear {
+    background: linear-gradient(45deg,lightblue,yellow,tomato);
+    width: 200px;
+    height: 200px;
+}
+
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.my-gradients-radial {
+    background: radial-gradient(circle,yellow, orange,red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+        radial-gradient(at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.my-gradients-positioned {
+    background:
+        radial-gradient(circle at bottom right, green, orange);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+.my-animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 4s;
+    animation-name: pop;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    width: 300px;
+    height: 300px;
+    background-color:lightseagreen;
+    color: white;
+}
+@keyframes pop {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        color: white;
+    }
+    80% {
+        position: relative;
+        top: -200px;
+        font-size: 100%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: lightgreen,teal;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: lightgoldenrodyellow,orange;
+        color: white;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+
+.flex-container-display-flex {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    
+}
+.flex-container-center {
+    border-width: 5px;
+    border-color: orange;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+}
+.flex-container-end {
+    border-width: 5px;
+    border-color: blue;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: greenyellow;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: pink;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-space-evenly-vertically-flex-start {
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+     align-items: flex-start;
+}
+.flex-container-space-evenly-vertically-align-center {
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.flex-container-space-evenly-vertically-align-end {
+    border-width: 5px;
+    border-color: orange;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+
+.flex-container-space-evenly-stretch {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-container-space-evenly-stretch > .flex-box {
+    flex-basis: 100%;
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .body1 {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .body1 {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1800px) {
+    .body1 {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .b2 {
+        background-color: rgb(28, 183, 235);
+    }
+    .hei {
+        background-color: rgb(223, 18, 223);
+        color: white;
+    }
+    .b2-border{
+    border-width: 5px;
+    border-style: solid;    
+}
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .b2 {
+        background-color: rgba(0, 255, 170, 0.849);
+        color: white;
+    }
+    .hei {
+        background-color: rgb(241, 105, 13);
+        color: white;
+        justify-content: center;
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 2400px) {
+    .b2 {
+        background-color: rgb(255, 115, 0);
+        color: white;
+    }
+    .hei {
+        background-color: rgb(23, 252, 34);
+        color: white;
+        justify-content: end;
+        display: flex;
+    }
+}

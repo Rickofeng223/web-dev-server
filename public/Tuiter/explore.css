@@ -1,0 +1,378 @@
+body {
+  background-color: black;
+}
+.wd-search {
+  background-color: darkgray;
+  color: white;
+  width: 90%;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.wd-border-left {
+  margin-left: 16px;
+}
+
+.wd-border-right {
+  margin-right: 12px;
+  padding: 7px;
+  float: right;
+}
+.wd-first-label {
+  color: rgb(29, 161, 242);
+  font-size: 15px;
+}
+.wd-first-label-border {
+  border-bottom: solid;
+  padding-bottom: 15px;
+  float: left;
+}
+.wd-other-labels {
+  color: rgb(110, 118, 125);
+  font-size: 15px;
+  padding: 16px;
+}
+.wd-labels {
+  float: left;
+  margin-left: 13%;
+}
+.wd-border-between {
+  border-bottom: 1rem solid;
+  color: darkgray;
+  padding: 10px;
+}
+.wd-border-thin {
+  border-bottom: 1rem solid;
+  color: darkgray;
+  border-width: 2px;
+  padding-bottom: 5px;
+}
+.wd-article-h {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+.wd-article-heading {
+  color: white;
+}
+.wd-article-toside {
+  width: 70%;
+}
+.wd-line-height {
+  line-height: 1px;
+}
+.wd-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  float: right;
+  margin-right: 16px;
+  object-fit: cover;
+}
+.wd-top-bor {
+  margin-top: 12px;
+}
+.wd-book-mark-t {
+  color: white;
+  font-size: 20px;
+}
+.wd-book-mark-underWeb {
+  color: lightgray;
+  font-size: 13px;
+  margin-top: 16px;
+  position: absolute;
+  top: 17px;
+  left: 22px;
+}
+.wd-light-solid-border {
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 12px;
+}
+.wd-dog-img {
+  margin-bottom: 12px;
+  border-radius: 48%;
+  width: 50px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+}
+.wd-the-author {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  bottom: 10px;
+}
+.wd-the-handl {
+  position: relative;
+  color: lightgray;
+  font-size: 15px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 5px;
+  bottom: 10px;
+}
+.wd-author-content {
+  color: white;
+  font-size: 15px;
+  width: 450px;
+  height: 100px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  left: 70px;
+  margin-top: 25px;
+  position: fixed;
+}
+.wd-img-below-content {
+  width: 504px;
+  height: 264px;
+  border-radius: 3%;
+  margin-left: 12px;
+}
+.wd-im-div {
+  margin-left: 65px;
+  top: 210px;
+  position: fixed;
+}
+.wd-f-text {
+  font-style: bold;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  width: 87%;
+}
+.wd-f-div {
+  margin-left: 65px;
+  top: 480px;
+  position: fixed;
+}
+.wd-thin-b {
+  border-bottom: 1rem solid;
+  color: lightgray;
+  border-width: 1px;
+}
+.wd-f-text2 {
+  font-style: bold;
+  color: lightgray;
+  font-size: 15px;
+  padding: 12px;
+  position: absolute;
+  width: 87%;
+  top: 26px;
+}
+.wd-f-text3 {
+  font-style: bold;
+  color: lightgray;
+  font-size: 15px;
+  padding: 12px;
+  position: absolute;
+  margin-top: 40px;
+}
+.wd-rounded-corners-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom: 1rem solid;
+  color: lightgray;
+  border-width: 1px;
+  width: 88%;
+}
+.wd-article-heading {
+  color: lightgray;
+  padding-left: 12;
+}
+.wd-icon-labels {
+  float: left;
+  margin-left: 12%;
+}
+.wd-icon-other-labels {
+  color: lightgray;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.wd-border-left1 {
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+
+
+
+
+
+
+
+.wd-book-mark {
+  color: white;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+.wd-book-mark-under {
+  margin-top: 12px;
+  margin-left: 16px;
+  color: lightgray;
+  font-size: 13px;
+  position: relative;
+  bottom: 15px;
+}
+.wd-bottom-border {
+  color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  bottom: 25px;
+}
+.wd-avatar-img {
+  margin-left: 16px;
+  margin-bottom: 12px;
+  border-radius: 48px;
+  width: 50px;
+  position: absolute;
+  top: 97px;
+}
+.wd-author-t {
+  margin-left: 12px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: white;
+  position: relative;
+  left: 60px;
+  bottom: 30px;
+}
+.wd-article-u {
+  margin-left: 12px;
+  margin-top: 12px;
+  color: lightgray;
+  font-size: 15px;
+  position: relative;
+  left: 150px;
+  bottom: 63px;
+}
+.wd-main-content {
+  font-size: 15px;
+  color: white;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  width: 500px;
+  position: relative;
+  bottom: 74px;
+  left: 55px;
+}
+.wd-tesla-img {
+  margin-bottom: 12px;
+  width: 504px;
+  height: 264px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  margin-left: 12px;
+  position: relative;
+  bottom: 75px;
+  left: 58px;
+}
+.wd-article-border {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 50px;
+  border-width: 1px;
+  border-style: solid; 
+  color: lightgray;
+  height: 28px;
+  position: relative;
+  width: 403px;
+  bottom: 91px;
+  left: 69px;
+  
+}
+.wd-article-text {
+  margin-top: 12px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  position: relative;
+  right: 50px;
+  bottom: 60px;
+}
+.wd-article-text-under {
+  color: lightgray;
+  padding: 12px;
+  font-size: 15px;
+  position: relative;
+  bottom: 95px;
+  width: 480px;
+  height: 50px;
+  right: 49px;
+}
+.wd-icon{
+  margin-top: 12px;
+  color: white;
+  font-size: 15px;
+  padding: 16px;
+  float: left;
+  margin-left: 13%;
+  position: relative;
+  right: 70px;
+}
+.wd-icon-text {
+  font-size: 15px;
+  padding: 16px;
+}
+.wd-icon-fit{
+  width: 600px;
+  position: relative;
+  left: 46px;
+  bottom: 110px;
+}
+.wd-red-heart{
+  color: red;
+  margin-right: 12px;
+}
+.wd-icon-adjust{
+  margin-right: 12px;
+  color: lightgray;
+}
+a{
+  text-decoration: none;
+}
+
+.wd-link:visited { color: lightgray; }
+.wd-link:hover { color: #FFA500; }
+.wd-link:focus { color: #00FF00; }
+
+.wd-gear-icon:visited{
+  color: rgb(29, 161, 242)
+}
+
+.wd-book-mark1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-left: 16px;
+  position: absolute;
+  left: -1px;
+  bottom: 35px;
+}
+.wd-book-mark-under1 {
+  margin-top: 12px;
+  margin-left: 16px;
+  color: lightgray;
+  font-size: 13px;
+  position: relative;
+  bottom: 15px;
+  right: 586px;
+}
+.wd-relative-img{
+  position: relative;
+}
+.wd-avatar-img1{
+  margin-left: 16px;
+  margin-bottom: 12px;
+  border-radius: 48px;
+  width: 50px;
+  position: absolute;
+  bottom: -31px;
+}
