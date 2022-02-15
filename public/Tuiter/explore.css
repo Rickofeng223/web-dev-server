@@ -1,23 +1,32 @@
 body {
+  margin: 10px;
   background-color: black;
 }
+
 .wd-search {
-  background-color: darkgray;
   color: white;
-  width: 90%;
+  background-color: lightgray;
+  width: 80%;
   padding: 5px;
   padding-left: 40px;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 .wd-border-left {
   margin-left: 16px;
 }
 
+.wd-left-side-b{
+  color: black;
+}
 .wd-border-right {
   margin-right: 12px;
   padding: 7px;
-  float: right;
+  position: relative;
+  right: 5px;
+  top: 5px;
+  
 }
 .wd-first-label {
   color: rgb(29, 161, 242);
@@ -54,6 +63,17 @@ body {
 }
 .wd-article-heading {
   color: white;
+}
+.wd-glas{
+  position: relative;
+  left:38px;
+  
+}
+.wd-gear{
+  position: relative;
+  top: 5px;
+  left: 20px;
+  
 }
 .wd-article-toside {
   width: 70%;
@@ -198,13 +218,6 @@ body {
   margin-top: 12px;
   margin-left: 16px;
 }
-
-
-
-
-
-
-
 
 .wd-book-mark {
   color: white;
@@ -376,4 +389,98 @@ a{
   width: 50px;
   position: absolute;
   bottom: -31px;
+}
+.wd-left-bar-text{
+  position: absolute;
+  top: 13px;
+}
+.wd-search-div-margin{
+  position: relative;
+  right: 20px;
+}
+
+.wd-text-infront{
+  z-index: 10;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+}
+.wd-text-width{
+  width: 300px;
+}
+.wd-img-set{
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.wd-Web-text-bold{
+  font-weight: bold;
+}
+.wd-marg{
+  position: relative;
+  bottom: 15px;
+}
+.wd-explore-avatar{
+  border-radius: 48px;
+  width: 50px;
+}
+.wd-follow-text-mar{
+  position: absolute;
+  left: 65px;
+  top: 6px;
+}
+.wd-button-follow{
+  position: absolute;
+  right: 1px;
+}
+.wd-float{
+  clear: both;
+  float: left;
+}
+.wd-z-in{
+  z-index: 10;
+}
+.wd-marg-t{
+  position: relative;
+  bottom: 5px;
+}
+
+.wd-cont{
+  display: flex;
+  align-items: center;
+}
+
+.left-ele{
+  width: 70%;
+}
+.right-ele{
+  width: 35%;
+}
+
+.right-element-im{
+  float: right;
+}
+.wd-color-back-b{
+  background-color: black;
+}
+.wd-texts-white{
+  color: gray;
+}
+.wd-text-whitee{
+  color: white;
+}
+
+.wd-text-colr{
+  color: rgba(107, 104, 104, 0.938);
+}
+.wd-line-background{
+  background-color: white;
+}
+.nav-tabs .nav-link:hover {
+    color: white;
+    border: none;
+    border-color:black;
+}
+.nav-tabs {
+    border-bottom: none;
 }
