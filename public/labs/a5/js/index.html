@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!---jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="../../../index.html">Back</a>
+
+    <a href="todos/index.html">Todo.js Practices</a>
+
+    <h2>Embedded script tag</h2>
+    <!---
+    <h2>Writing to the Console</h2>
+    <h2>Variables and Constants</h2>
+    <h2>Variable Types</h2>
+    <h2>Boolean Variables</h2>
+    <h2>If Else</h2>
+    <h2>Ternary Conditional Operator</h2>
+    <h2>Legacy ES5 function</h2>
+    <h2>New ES6 Functions</h2>
+    <h2>Implied Return</h2>
+    <h2>Parenthesis and Parameters</h2>
+    <h2>Arrays</h2>
+    <h2>Array index and length</h2>
+    <h2>Adding and Removing Data to/from Arrays</h2>
+    <h2>For Loops</h2>
+    <h2>The Map Function</h2>
+    <h2>The Find Function</h2>
+    <h2>The Find Index Function</h2>
+    <h2>The Filter Function</h2>
+    <h2>Template Strings</h2>
+    -->
+    <h2>Writing to the DOM</h2>
+    <script>
+      document.write("Welcome to JavaScript!");
+    </script>
+
+    <script src="index.js"></script>
+    <h2>Calculating an HTML string</h2>
+    <script>
+      const renderTodos = (todos) => `
+            <ul>
+                ${todos.map((todo) => `<li>${todo}</li>`).join("")}
+            </ul>`;
+      const todos = ["Pickup kids", "Feed dogs", "ssss"];
+      let html = renderTodos(todos);
+      document.write(html);
+    </script>
+
+    <h2 id="bind-by-id">Binding by ID</h2>
+    <h3 class="bind-by-class">Binding 1 by Class</h3>
+    <h3 class="bind-by-class">Binding 2 by Class</h3>
+    <h4 id="bind-by-id1">Binding by ID</h4>
+
+    <h2 id="change-style">Change style</h2>
+    <h2 id="change-style22">ID Color blue</h2>
+    <h3 class="change-style">Change style 1</h3>
+    <h3 class="change-style">Change style 2</h3>
+
+    <h2 id="get-id-attr">Get id attribute</h2>
+    <h2 id="set-class-attr">Set class attribute</h2>
+    <h2 class="get-class">getssss</h2>
+
+    <h2 id="add-class-1">Add class</h2>
+
+    <h2 id="remove-class-1" class="class-2">Remove class</h2>
+
+    <h2 id="hide-me">Hide me</h2>
+
+    <h2 id="show-me" class="im-hidden">Show me</h2>
+
+    <h2>Appending new elements</h2>
+    <ul id="append-new-elements"></ul>
+
+    <h2>Removing elements</h2>
+    <ul>
+      <li>Line item 1</li>
+      <li>Line item 2</li>
+      <li id="remove-this">Line item 3</li>
+      <li id="remove-this2">Line item 4</li>
+      <li>Line item 5</li>
+    </ul>
+
+    <h2>Emptying elements</h2>
+    <ul id="empty-this">
+      <li>Line item A</li>
+      <li>Line item B</li>
+      <li>Line item C</li>
+      <li>Line item D</li>
+      <li>Line item E</li>
+    </ul>
+
+    <h2>Change content</h2>
+    <p id="change-this-text">Change me</p>
+    <ul id="change-this-html"></ul>
+
+    <h2>Navigating the DOM hierarchy</h2>
+    <div id="parent">
+      This is the parent DIV
+      <ul>
+        <li>Child 1</li>
+        <li id="child-2">Child 2</li>
+        <li>Child 3</li>
+        <li>Child 4</li>
+        <li>Child 5</li>
+        <li id="child-6">Child 6</li>
+        <li>Child 7</li>
+      </ul>
+    </div>
+
+    <h2 class="clickable">Event handling</h2>
+    <h2 class="clickable">Click event</h2>
+    <p class="clickable">Anything can be clickable</p>
+    <button class="clickable">Not just me clickable</button>
+
+    <h2 id="event-target">Event target</h2>
+
+    
+    <h3 id="hide-show">Hi/show element</h3>
+
+    <button id="hide">Hide</button>
+
+    <button id="show">Show</button>
+  </body>
+</html>
