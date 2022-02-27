@@ -8,7 +8,9 @@ const PostItem = (post) => {
         </img> 
       </div>
       <div class= "wd-right-element">
-      <p>${post.userName} <i class="fas fa-check-circle"></i>${post.handle} ${post.time} <i class="fas fa-ellipsis-h wd-dot"></i> </p>
+      <p>${post.userName} <i class="fas fa-check-circle"></i>${post.handle} ${
+    post.time
+  } <i class="fas fa-ellipsis-h wd-dot"></i> </p>
       <p class="wd-relat">
           ${post.title}
           <span class="text-primary">@Inspiration4x</span>
@@ -18,7 +20,9 @@ const PostItem = (post) => {
     </div>
     <div class="card wd-right-element wd-bord-round wd-relat" style="width: 80%;">
       <img src="${post.cardImage}" class="card-img-top wd-bord-top" alt="...">
-      <div class="card-body wd-backGround">
+      <div class="card-body wd-backGround" style="${
+        post.cardTitle !== "" ? "" : "display: none"
+      }" >
       <h5 class="card-title">${post.cardTitle}</h5>
       <p class="card-text text-muted">${post.cardText}</p>
       <i class="fas fa-link text-muted"> ${post.From}</i> 
