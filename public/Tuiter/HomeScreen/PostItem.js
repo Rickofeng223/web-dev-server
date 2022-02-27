@@ -39,7 +39,3 @@ const PostItem = (post) => {
 };
 export default PostItem;
 
-
-// <a href="home.html" className={`list-group-item 
-//           ${active === 'home' ? 'active' : ""}  list-group-item-action 
-//           wd-nav-row`}>
