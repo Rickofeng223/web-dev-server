@@ -13,8 +13,10 @@ const PostItem = (post) => {
   } <i class="fas fa-ellipsis-h wd-dot"></i> </p>
       <p class="wd-relat">
           ${post.title}
-          <span class="text-primary">@Inspiration4x</span>
-          crew on the first all -civilian orbital space...
+          <span class="text-primary" style="${
+            post.keyWordHighligh === "" ? "display: none" : ""
+          }">${post.keyWordHighlight}</span>
+          ${post.missionText}
         </p>
       </div>
     </div>
@@ -30,9 +32,15 @@ const PostItem = (post) => {
     </div>
     </div>
     <div class="wd-right-element wd-paddings">
-          <a href="#" class="wd-link wd-marg"><i class="far fa-comment wd-icon-adjust"></i>31k</a>
-          <a href="#" class="wd-link wd-marg"><i class="fas fa-retweet wd-icon-adjust"></i>33k</a>
-          <a href="#" class="wd-link wd-marg"><i class="fas fa-heart wd-red-heart"></i>37k</a>
+          <a href="#" class="wd-link wd-marg"><i class="far fa-comment wd-icon-adjust"></i>${
+            post.comment
+          }</a>
+          <a href="#" class="wd-link wd-marg"><i class="fas fa-retweet wd-icon-adjust"></i>${
+            post.retweet
+          }</a>
+          <a href="#" class="wd-link wd-marg"><i class="fas fa-heart wd-red-heart"></i>${
+            post.heart
+          }</a>
           <a href="#" class="wd-link wd-marg"><i class="fas fa-upload"></i></a>
   </div>
 
