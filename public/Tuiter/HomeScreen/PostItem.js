@@ -20,9 +20,9 @@ const PostItem = (post) => {
         </p>
       </div>
     </div>
-    <div class="card wd-right-element wd-bord-round wd-relat" style="width: 80%;">
-      <img src="${post.cardImage}" class="card-img-top wd-bord-top" alt="...">
-      <div class="card-body wd-backGround" style="${
+    <div class="card wd-right-element wd-relat" style="width: 80%;">
+      <img src="${post.cardImage}" class="card-img-top wd-bord-round" alt="...">
+      <div class="card-body wd-backGround wd-bord-round" style="${
         post.cardTitle !== "" ? "" : "display: none"
       }" >
       <h5 class="card-title">${post.cardTitle}</h5>
