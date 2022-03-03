@@ -6,7 +6,7 @@ import "./vendors/bootstrap/css/bootstrap.min.css";
 import "./vendors/bootstrap/bootstrap.min.css";
 import "./vendors/fontawesome/css/all.min.css";
 
-import HelloWorld from "./components//HelloWorld"; // no .js extension needed    imports HelloWorld.js
+import HelloWorld from "./components/HelloWorld"; // no .js extension needed    imports HelloWorld.js
 import Labs from "./components/Labs"; // imports Labs.js
 import Tuiter from "./components/Tuiter"; // imports Tuiter.js
 
@@ -16,10 +16,9 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" exact={true} element={<Labs />} />
+          <Route path="/labss" exact={true} element={<Labs />} />
 
           <Route path="/hello" exact={true} element={<HelloWorld />} />
-
-         
 
           <Route path="/tuiter" exact={true} element={<Tuiter />} />
         </Routes>
