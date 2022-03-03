@@ -6,7 +6,7 @@ const PostSummaryList = () => {
     return (
     <ul className={`list-group`}>
             {po.map((post) => {
-              return <PostSummaryItem post = {post}/>;
+              return <PostSummaryItem post={post} key={post.userName} />;
             })}
 
         </ul>

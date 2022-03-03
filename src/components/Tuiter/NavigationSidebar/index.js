@@ -1,16 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const NavigationSidebar = ({ active = "explore" }) => {
   return (
     <>
       <div className={`list-group`}>
-        <a className={`list-group-item"`} href="/">
-          <i className={`fab fa-twitter"`}></i>
-        </a>
+        <Link to="/"
 
-        <a
+         className={`list-group-item"`}>
+          <i className={`fab fa-twitter"`}></i>
+        
+        </Link>
+         <Link to="/tuiter/home"
+
           href="../HomeScreen/home.html"
           className={`list-group-item m list-group-item-action event-target 
-            ${active === "Home" ? "active" : ""}`}
+            ${active === "home" ? "active" : ""}`}
         >
           <i className={`fas fa-home`}>
             <p
@@ -19,12 +24,12 @@ const NavigationSidebar = ({ active = "explore" }) => {
               Home
             </p>
           </i>
-        </a>
+        </Link>
 
-        <a
+        <Link to="/tuiter/explore"
           href="../ExploreScreen/explore.html"
           className={`list-group-item m list-group-item-action event-target 
-            ${active === "Explore" ? "active" : ""}`}
+            ${active === "explore" ? "active" : ""}`}
           aria-current="true"
         >
           <i className={`fas fa-hashtag`}>
@@ -34,7 +39,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
               Explore
             </p>
           </i>
-        </a>
+        </Link>
 
         <a
           href="#"

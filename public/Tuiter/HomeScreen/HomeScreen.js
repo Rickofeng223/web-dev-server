@@ -1,5 +1,5 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import posts from "../PostSummaryList/index.js"
+import posts from "../PostSummaryList/index.js";
 import posIndex from "./index.js";
 
 (function ($) {
@@ -18,4 +18,3 @@ import posIndex from "./index.js";
     </div>
     `);
 })($);
-

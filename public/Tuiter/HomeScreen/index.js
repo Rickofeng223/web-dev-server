@@ -7,14 +7,14 @@ const posIndex = () => {
             ${PostList.map((post) => {
               return PostItem(post);
             }).join("")}
-      
+    </ul>
     `;
 };
 
 export default posIndex;
 
-
-{/* <div class= "wd-border-s wd-pading-right">
+{
+  /* <div class= "wd-border-s wd-pading-right">
   <div class="wd-container p-3 ">
     <div class="wd-left-element">
     <img class="wd-round-rad wd-left-element-img" src= "https://cdn-icons-png.flaticon.com/512/147/147144.png">
@@ -37,4 +37,5 @@ export default posIndex;
           <a href="#" class="wd-link wd-marg"><i class="fas fa-heart wd-red-heart"></i>37k</a>
           <a href="#" class="wd-link wd-marg"><i class="fas fa-upload"></i></a>
   </div>
-</div> */}
+</div> */
+}
