@@ -26,7 +26,7 @@ const PostItem = ({
         <div className={`wd-left-element`}>
           <img
             className={`wd-round-rad wd-left-element-img`}
-            alt="avatar image"
+            alt="avatar"
             src={post.avatarIcon}
           ></img>
         </div>
@@ -52,7 +52,7 @@ const PostItem = ({
         <img
           src={post.cardImage}
           class={`card-img-top wd-bord-round`}
-          alt="card image"
+          alt="card"
         />
         <div
           className={`card-body wd-backGround wd-bord-round ${

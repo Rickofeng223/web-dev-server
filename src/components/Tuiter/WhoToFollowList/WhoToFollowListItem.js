@@ -15,7 +15,7 @@ const WhoToFollowListItem = ({
         <img
           className={`wd-explore-avatar`}
           src={who.avatarIcon}
-          alt="avatar image Icon"
+          alt="avatar Icon"
         >
           
         </img>

@@ -25,7 +25,7 @@ const PostSummaryItem = ({
       <img
         src={post.image}
         className={`wd-img wd-img-set`}
-        alt="post image"
+        alt="post"
       />
       <p className={` wd-marg`}>123K Tweets</p>
     </li>
