@@ -11,14 +11,14 @@ import TodoList from "./Todo/TodoList";
 const Labs = () => {
   return (
     <div>
-      <Link to="/lab">
-      <h1>Labs!!!</h1>
-      <TodoItem />
-      <TodoList/>
-      <ConditionalOutput />
-      <Styles />
-      <Classes />
-      </Link>
+        <h1>Labs!!!</h1>
+        <Link to="/hello">Hello</Link> |<Link to="/tuiter">Tuiter</Link>
+        <TodoItem />
+        <TodoList />
+        <ConditionalOutput />
+        <Styles />
+        <Classes />
+      
     </div>
   );
 };
