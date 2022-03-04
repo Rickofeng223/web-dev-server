@@ -42,7 +42,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </Link>
 
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-bell`}>
@@ -55,7 +55,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </a>
 
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-envelope`}>
@@ -67,7 +67,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           </i>
         </a>
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-bookmark`}>
@@ -79,7 +79,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
           </i>
         </a>
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-list`}>
@@ -92,7 +92,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </a>
 
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-user`}>
@@ -105,7 +105,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </a>
 
         <a
-          href="#"
+          href="/#"
           className={`list-group-item m list-group-item-action event-target`}
         >
           <i className={`fas fa-comment-dots`}>

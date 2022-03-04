@@ -18,29 +18,29 @@ const ExploreComponent = () => {
 
       <ul className={`nav mb-2 nav-tabs`}>
         <li className={`nav-item`}>
-          <a className={`nav-link active`} href="#">
+          <a className={`nav-link active`} href="/#">
             For you
           </a>
         </li>
         <li className={`nav-item`}>
-          <a className={`nav-link wd-text-colr`} href="#">
+          <a className={`nav-link wd-text-colr`} href="/#">
             Trending
           </a>
         </li>
         <li className={`nav-item`}>
-          <a className={`nav-link wd-text-colr`} href="#">
+          <a className={`nav-link wd-text-colr`} href="/#">
             News
           </a>
         </li>
         <li className={`nav-item`}>
-          <a className={`nav-link wd-text-colr`} href="#">
+          <a className={`nav-link wd-text-colr`} href="/#">
             Sports
           </a>
         </li>
         <li className={`nav-item`}>
           <a
             className={`nav-link d-none d-sm-none d-md-block wd-text-colr`}
-            href="#"
+            href="/#"
           >
             Entertainment
           </a>

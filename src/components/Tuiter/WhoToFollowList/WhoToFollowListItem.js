@@ -12,7 +12,13 @@ const WhoToFollowListItem = ({
   return (
     <li className={`list-group-item`}>
       <div className={`wd-float`}>
-        <img className={`wd-explore-avatar`} src={who.avatarIcon}></img>
+        <img
+          className={`wd-explore-avatar`}
+          src={who.avatarIcon}
+          alt="avatar image Icon"
+        >
+          
+        </img>
       </div>
 
       <div className={`wd-follow-text-mar wd-float wd-z-in`}>

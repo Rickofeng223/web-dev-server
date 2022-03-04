@@ -26,6 +26,7 @@ const PostItem = ({
         <div className={`wd-left-element`}>
           <img
             className={`wd-round-rad wd-left-element-img`}
+            alt="avatar image"
             src={post.avatarIcon}
           ></img>
         </div>
@@ -48,9 +49,15 @@ const PostItem = ({
         className={`card wd-right-element wd-relat`}
         style={{ width: "80%" }}
       >
-        <img src={post.cardImage} class={`card-img-top wd-bord-round`} />
+        <img
+          src={post.cardImage}
+          class={`card-img-top wd-bord-round`}
+          alt="card image"
+        />
         <div
-          className={`card-body wd-backGround wd-bord-round ${post.cardTitle ==='' ? 'wd-vis' : ''}`} 
+          className={`card-body wd-backGround wd-bord-round ${
+            post.cardTitle === "" ? "wd-vis" : ""
+          }`}
         >
           <h5 className={`card-title`}>{post.cardTitle}</h5>
           <p className={`card-text text-muted`}>{post.cardText}</p>
@@ -59,19 +66,19 @@ const PostItem = ({
       </div>
 
       <div className={`wd-right-element wd-paddings`}>
-        <a href="#" className={`wd-link wd-marg`}>
+        <a href="/#" className={`wd-link wd-marg`}>
           <i className={`far fa-comment wd-icon-adjust`}></i>
           {post.comment}
         </a>
-        <a href="#" className={`wd-link wd-marg`}>
+        <a href="/#" className={`wd-link wd-marg`}>
           <i className={`fas fa-retweet wd-icon-adjust`}></i>
           {post.retweet}
         </a>
-        <a href="#" className={`wd-link wd-marg`}>
+        <a href="/#" className={`wd-link wd-marg`}>
           <i className={`fas fa-heart wd-red-heart`}></i>
           {post.heart}
         </a>
-        <a href="#" className={`wd-link wd-marg`}>
+        <a href="/#" className={`wd-link wd-marg`}>
           <i className={`fas fa-upload`}></i>
         </a>
       </div>
