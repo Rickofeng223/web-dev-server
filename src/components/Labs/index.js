@@ -11,7 +11,6 @@ import TodoList from "./Todo/TodoList";
 const Labs = () => {
   return (
     <div>
-      <h1>Labs!!!</h1>
       <h1>Non React.js Assignments</h1>
       <ul>
         <li>
@@ -26,11 +25,12 @@ const Labs = () => {
         <li>
           <a href="labs/a5//js/index.html">Assignment 5 Labs</a>
         </li>
+        <li>
+          <a href="labs/index.html">Web Dev Challenges</a>
+        </li>
       </ul>
-      <h1>
-        <a href="labs/index.html">Web Dev Challenges</a>
-      </h1>
-      <Link to="/hello">Hello</Link> |<Link to="/tuiter">Tuiter</Link>
+      <h1>Labs!!!</h1>
+      <Link to="/hello">Hello</Link> | <Link to="/tuiter">Tuiter</Link>
       <TodoItem />
       <TodoList />
       <ConditionalOutput />

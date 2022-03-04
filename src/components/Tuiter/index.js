@@ -16,7 +16,7 @@ const Tuiter = () => {
   return (
     <>
       <h1>Tuiter!!!</h1>
-      <Link to="/hello">Hello</Link> |<Link to="/">Labs</Link>
+      <Link to="/hello">Hello</Link> | <Link to="/">Labs</Link>
       <NavigationSidebar active="explore" />
       <br/>
       <WhoToFollowList />
