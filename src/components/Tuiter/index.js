@@ -15,18 +15,18 @@ import WhoToFollowList from "./WhoToFollowList";
 const Tuiter = () => {
   return (
     <>
-      <h1>Tuiter!!!</h1>
-      <Link to="/hello">Hello</Link> | <Link to="/">Labs</Link>
+      <h1>A6 Tuiter!!!</h1>
+      <Link to="/hello">Hello</Link> | <Link to="/">Labs</Link> |{" "}
+      <Link to="/tuiter/explore">Explore</Link> |{" "}
+      <Link to="/tuiter/home">Home</Link>
       <NavigationSidebar active="explore" />
-      <br/>
+      <br />
       <WhoToFollowList />
-      <br/>
-      <PostSummaryList/>
-      <ExploreComponent/>
-      <ExploreScreen/>
-      <HomeScreen/>
-      
-      
+      <br />
+      <PostSummaryList />
+      <ExploreComponent />
+      <ExploreScreen />
+      <HomeScreen />
     </>
   );
 };

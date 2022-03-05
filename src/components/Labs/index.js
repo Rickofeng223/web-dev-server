@@ -6,8 +6,6 @@ import Styles from "./Styles";
 import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
 
-
-
 const Labs = () => {
   return (
     <div>
@@ -29,8 +27,10 @@ const Labs = () => {
           <a href="labs/index.html">Web Dev Challenges</a>
         </li>
       </ul>
-      <h1>Labs!!!</h1>
-      <Link to="/hello">Hello</Link> | <Link to="/tuiter">Tuiter</Link>
+      <h1>A6 Labs!!!</h1>
+      <Link to="/hello">Hello</Link> | <Link to="/tuiter">Tuiter</Link> |
+      <Link to="/tuiter/explore">Explore</Link> |
+      <Link to="/tuiter/home">Home</Link>
       <TodoItem />
       <TodoList />
       <ConditionalOutput />
