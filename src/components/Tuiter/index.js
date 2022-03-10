@@ -4,8 +4,6 @@ import ExploreComponent from "./ExploreScreen/ExploreComponent";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
 
-
-
 import NavigationSidebar from "./NavigationSidebar";
 import PostSummaryList from "./PostSummaryList";
 import WhoToFollowList from "./WhoToFollowList";  

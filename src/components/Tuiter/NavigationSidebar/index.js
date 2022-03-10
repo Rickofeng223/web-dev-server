@@ -7,8 +7,8 @@ const NavigationSidebar = ({ active = "explore" }) => {
       <div className={`list-group`}>
         <Link to="/"
 
-         className={`list-group-item"`}>
-          <i className={`fab fa-twitter"`}></i>
+         className={`list-group-item`}>
+          <i className={`fab fa-twitter`}></i>
         
         </Link>
          <Link to="/tuiter/home"
