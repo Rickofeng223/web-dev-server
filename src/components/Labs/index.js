@@ -28,7 +28,9 @@ const Labs = () => {
           <a href="labs/index.html">Web Dev Challenges</a>
         </li>
       </ul>
-      <h1>Labs!!!</h1>
+      <h1>A7 Labs</h1>
+      <ReduxExamples />
+      <h1>A6 Labs!!!</h1>
       <Link to="/hello">Hello</Link> | <Link to="/tuiter">Tuiter</Link> |
       <Link to="/tuiter/explore">Explore</Link> |
       <Link to="/tuiter/home">Home</Link>
@@ -37,7 +39,6 @@ const Labs = () => {
       <ConditionalOutput />
       <Styles />
       <Classes />
-      <ReduxExamples/>
     </div>
   );
 };
