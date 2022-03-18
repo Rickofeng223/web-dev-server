@@ -28,7 +28,7 @@ const todosReducer = (state = data,action) => {
         ...action.todo,
         _id: new Date().getTime() + "",
       };
-      return [...state, action.todo]; // create new state as array,containing old todos and appending the new todo at the end of the array
+      return [...state, newTodo]; // create new state as array,containing old todos and appending the new todo at the end of the array
       
     default:
       return state;

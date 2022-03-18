@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavigationSidebar from "../NavigationSidebar";
+//import NavigationSidebar from "../NavigationSidebar";
 import ExploreComponent from "./ExploreComponent";
-import WhoToFollowList from "../WhoToFollowList";
+//import WhoToFollowList from "../WhoToFollowList";
 
 const ExploreScreen = () => {
   return (
