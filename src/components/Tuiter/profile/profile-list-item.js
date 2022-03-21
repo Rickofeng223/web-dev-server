@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const ProfileList = ({  }) => {
+const ProfileList = () => {
  
   const userProfile = useSelector((state) => state.profile);
 
@@ -83,6 +83,7 @@ const ProfileList = ({  }) => {
           height="140px"
           width="140px"
           className="rounded-circle wd-icon"
+          alt="profilePic"
         />
         {!isEditMode ? (
           <button
