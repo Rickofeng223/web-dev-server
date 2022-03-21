@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProfileList = () => {
- 
   const userProfile = useSelector((state) => state.profile);
-
-  const pro = userProfile
   //const [userFirstName, setUserFirstName] = useState(userProfile.firstName);
   const [isEditMode, setIsEditMode] = useState(false);
   //const [userLastName, setUserLastName] = useState(userProfile.lastName);
@@ -72,14 +69,14 @@ const ProfileList = () => {
         ""
       )}
       <img
-        src={pro.bannerPicture}
+        src={userProfile.bannerPicture}
         height="200px"
         width="100%"
         alt="Banner"
       />
       <div className="mt-2">
         <img
-          src={pro.profilePicture}
+          src={userProfile.profilePicture}
           height="140px"
           width="140px"
           className="rounded-circle wd-icon"
@@ -109,12 +106,12 @@ const ProfileList = () => {
               </div>
             ) : (
               <span>
-                {pro.firstName} {pro.lastName}
+                {userProfile.firstName} {userProfile.lastName}
               </span>
             )}
           </header>
         </h2>
-        {!isEditMode ? <p>{pro.handle}</p> : ""}
+        {!isEditMode ? <p>{userProfile.handle}</p> : ""}
 
         {isEditMode ? (
           <div>
@@ -124,7 +121,7 @@ const ProfileList = () => {
         ) : (
           ""
         )}
-        <p>{pro.bio}</p>
+        <p>{userProfile.bio}</p>
         {isEditMode ? (
           <div>
             <h5>Location: </h5>
@@ -133,24 +130,24 @@ const ProfileList = () => {
         ) : (
           ""
         )}
-        <i className="fas fa-map-marker-alt "> {pro.location} </i>
+        <i className="fas fa-map-marker-alt "> {userProfile.location} </i>
         {isEditMode ? (
           <div>
             <h5>DateOfBirth: </h5>
         <input onChange={handleDateOfBirthChange} value={dateOfBirth}></input>
         </div>): ""
         }
-        <i className="fas fa-building ms-3"> Born {pro.dateOfBirth}</i>
+        <i className="fas fa-building ms-3"> Born {userProfile.dateOfBirth}</i>
 
         {!isEditMode ? (
-          <i className="fas fa-calendar-alt ms-3"> Joined {pro.dateJoined}</i>
+          <i className="fas fa-calendar-alt ms-3"> Joined {userProfile.dateJoined}</i>
         ) : (
           ""
         )}
         <div className="mt-3">
           {!isEditMode ? (
             <p>
-              {pro.followingCount} Following {pro.followersCount} Followers
+              {userProfile.followingCount} Following {userProfile.followersCount} Followers
             </p>
           ) : (
             ""

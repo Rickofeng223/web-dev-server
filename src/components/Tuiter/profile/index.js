@@ -5,7 +5,6 @@ import ProfileMain from "./ProfileComponent";
 const ProfileScreen = () => {
   return (
     <div>
-      <h1>ProfileScreen</h1>
       <ProfileMain/>
     </div>
   );
