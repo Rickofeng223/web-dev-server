@@ -1,3 +1,4 @@
+
 import React, { useState }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -66,7 +67,7 @@ const Todos = () => {
               {todo.do}
               <button
                 onClick={() => deleteTodoClickHandler(todo)}
-                className="btn btn-danger float-end"
+                className="btn btn-danger float-end  "
               >
                 Delete
               </button>

@@ -10,6 +10,7 @@ import Labs from "./components/Labs"; // imports Labs.js
 import Tuiter from "./components/Tuiter"; // imports Tuiter.js
 import HomeScreen from "./components/Tuiter/home-screen/index";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
+import ProfileScreen from "./components/Tuiter/profile";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route index element={<HomeScreen />} />
               <Route path="home" element={<HomeScreen />} />
               <Route path="explore" element={<ExploreScreen />} />
+              <Route path="profile" element={<ProfileScreen/>} />
             </Route>
           </Route>
         </Routes>

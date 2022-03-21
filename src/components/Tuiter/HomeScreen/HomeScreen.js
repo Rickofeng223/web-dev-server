@@ -10,16 +10,16 @@ const HomeScreen = () => {
     return (
       <>
         <Link to="/">Back to Lab</Link>
-        <div class="row mt-2">
-          <div class="col-2 col-md-2 col-lg-1 col-xl-2">
+        <div className="row mt-2">
+          <div className="col-2 col-md-2 col-lg-1 col-xl-2">
             <NavigationSidebar active="home" />
           </div>
 
-          <div class="container col-6">
+          <div className="container col-6">
             <PosIndex />
           </div>
 
-          <div class="col-2 d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 ">
+          <div className="col-2 d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 ">
             <PostSummaryList />
           </div>
         </div>

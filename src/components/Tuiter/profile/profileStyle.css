@@ -1,0 +1,15 @@
+.wd-btn-background{
+    border-color: rgb(94, 92, 92);
+    color: white;
+}
+.wd-icon{
+    z-index: 1px;
+    position: relative;
+    bottom: 90px;
+ 
+}
+.wd-text-div{
+    position: absolute;
+    width: 40%;
+
+}

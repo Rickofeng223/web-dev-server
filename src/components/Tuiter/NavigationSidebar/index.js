@@ -5,15 +5,11 @@ const NavigationSidebar = ({ active = "explore" }) => {
   return (
     <>
       <div className={`list-group`}>
-        <Link to="/"
-
-         className={`list-group-item`}>
+        <Link to="/" className={`list-group-item`}>
           <i className={`fab fa-twitter`}></i>
-        
         </Link>
-         <Link to="/tuiter/home"
-
-          href="../HomeScreen/home.html"
+        <Link
+          to="/tuiter/home"
           className={`list-group-item m list-group-item-action event-target 
             ${active === "home" ? "active" : ""}`}
         >
@@ -26,8 +22,8 @@ const NavigationSidebar = ({ active = "explore" }) => {
           </i>
         </Link>
 
-        <Link to="/tuiter/explore"
-          href="../ExploreScreen/explore.html"
+        <Link
+          to="/tuiter/explore"
           className={`list-group-item m list-group-item-action event-target 
             ${active === "explore" ? "active" : ""}`}
           aria-current="true"
@@ -90,10 +86,12 @@ const NavigationSidebar = ({ active = "explore" }) => {
             </p>
           </i>
         </a>
-
-        <a
-          href="/#"
-          className={`list-group-item m list-group-item-action event-target`}
+        
+        <Link
+          to="/tuiter/profile"
+          className={`list-group-item m list-group-item-action event-target 
+          ${active === "explore" ? "active" : ""}`}
+          aria-current="true"
         >
           <i className={`fas fa-user`}>
             <p
@@ -102,7 +100,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
               Profile
             </p>
           </i>
-        </a>
+        </Link>
 
         <a
           href="/#"
