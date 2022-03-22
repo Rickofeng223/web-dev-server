@@ -7,6 +7,7 @@ import { Provider } from "react-redux";   // import Provider which will deliver 
 import { combineReducers, createStore } from "redux";  // import the combineReducers function
 
 import Todos from "./todos-component";   // import new component to render todos
+import { Link } from "react-router-dom";
 
 const reducers = combineReducers({ hello, todos }); // combine all reducers into a single reducer, each available through these namespaces
 const store = createStore(reducers);  // create single store from combined reducers
@@ -16,8 +17,11 @@ const ReduxExamples = () => {
     <Provider store={store}>
       <div>
         <h2>Redux Examples</h2>
-        <Todos/>
-        <HelloReduxExampleComponent/>      
+        <Link to="/tuiter/profile">Profile For Challenge</Link> |{" "}
+        <Link to="/tuiter/home">Home</Link> |{" "}
+        <Link to="/tuiter/explore">explore</Link>
+        <Todos />
+        <HelloReduxExampleComponent />
       </div>
     </Provider>
   );

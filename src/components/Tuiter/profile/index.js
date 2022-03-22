@@ -1,11 +1,12 @@
 import React from "react";
-import ProfileMain from "./ProfileComponent";
+import ProfileList from "./profile-list-item";
+//import ProfileMain from "./ProfileComponent";
 
 
 const ProfileScreen = () => {
   return (
     <div>
-      <ProfileMain/>
+      <ProfileList />
     </div>
   );
 };

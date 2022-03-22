@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import "./profileStyle.css";
 
 const ProfileList = () => {
   const userProfile = useSelector((state) => state.profile);
@@ -9,7 +10,7 @@ const ProfileList = () => {
   const [fullName, setFullName] = useState(userProfile.firstName +" "+ userProfile.lastName);
   const [bio,setBio] = useState(userProfile.bio);
   const [location, setLocation] = useState(userProfile.location);
-   const [dateOfBirth, setDateOfBirth] = useState(userProfile.dateOfBirth);
+  const [dateOfBirth, setDateOfBirth] = useState(userProfile.dateOfBirth);
   const dispatch = useDispatch();
   
   const editProfile= () =>{
@@ -22,6 +23,7 @@ const ProfileList = () => {
   const handleFirstNameChange = (e) => {
     setFullName(e.target.value);
   };
+
 
   const handleBioChange = (b) => {
      setBio(b.target.value);
@@ -56,7 +58,7 @@ const ProfileList = () => {
     <div>
       {isEditMode ? (
         <span onClick={cancelEdit}>
-          <i class="fas fa-times"></i>
+          <i class="fas fa-times"></i> Edit Profile
         </span>
       ) : (
         ""
@@ -74,6 +76,7 @@ const ProfileList = () => {
         width="100%"
         alt="Banner"
       />
+      {isEditMode ? <i class="fas fa-camera wd-banner-img-edit"></i> : ""}
       <div className="mt-2">
         <img
           src={userProfile.profilePicture}
@@ -82,11 +85,10 @@ const ProfileList = () => {
           className="rounded-circle wd-icon"
           alt="profilePic"
         />
+        {isEditMode ? <i class="fas fa-camera wd-profile-img"></i> : ""}
+
         {!isEditMode ? (
-          <button
-            className="rounded-pill btn float-end wd-btn-background"
-            onClick={editProfile}
-          >
+          <button className="rounded-pill btn float-end" onClick={editProfile}>
             Edit profile
           </button>
         ) : (
@@ -134,20 +136,29 @@ const ProfileList = () => {
         {isEditMode ? (
           <div>
             <h5>DateOfBirth: </h5>
-        <input onChange={handleDateOfBirthChange} value={dateOfBirth}></input>
-        </div>): ""
-        }
+            <input
+              onChange={handleDateOfBirthChange}
+              value={dateOfBirth}
+            ></input>
+          </div>
+        ) : (
+          ""
+        )}
         <i className="fas fa-building ms-3"> Born {userProfile.dateOfBirth}</i>
 
         {!isEditMode ? (
-          <i className="fas fa-calendar-alt ms-3"> Joined {userProfile.dateJoined}</i>
+          <i className="fas fa-calendar-alt ms-3">
+            {" "}
+            Joined {userProfile.dateJoined}
+          </i>
         ) : (
           ""
         )}
         <div className="mt-3">
           {!isEditMode ? (
             <p>
-              {userProfile.followingCount} Following {userProfile.followersCount} Followers
+              {userProfile.followingCount} Following{" "}
+              {userProfile.followersCount} Followers
             </p>
           ) : (
             ""

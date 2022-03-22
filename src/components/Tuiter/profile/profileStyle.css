@@ -13,3 +13,13 @@
     width: 40%;
 
 }
+.wd-banner-img-edit{
+    position: relative;
+    bottom: 120px;
+    left: 260px;
+}
+.wd-profile-img{
+    position:relative;
+    right: 140px;
+    bottom: 20px;
+}
