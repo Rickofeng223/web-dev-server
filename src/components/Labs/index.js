@@ -11,6 +11,7 @@ const Labs = () => {
   return (
     <div>
       <h1>Non React.js Assignments</h1>
+      
       <ul>
         <li>
           <a href="labs/a2/html/index.html">Assignment 2 Labs</a>
