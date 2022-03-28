@@ -22,7 +22,7 @@ function App() {
             <Route path="lab" exact={true} element={<Labs />} />
 
             <Route path="hello" exact={true} element={<HelloWorld />} />
-            <Route path="tuiter" exact={true} element={<Tuiter />}>
+            <Route path="tuiter" exact={true} element={<Tuiter />}> 
               <Route index element={<HomeScreen />} />
               <Route path="home" element={<HomeScreen />} />
               <Route path="explore" element={<ExploreScreen />} />

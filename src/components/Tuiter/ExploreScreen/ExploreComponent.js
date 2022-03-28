@@ -11,7 +11,7 @@ const ExploreComponent = () => {
             className={`wd-search wd-line-background text-dark" type="search" placeholder="Search Twitter`}
           />
           <a href="explore-settings.html wd-gear-icon">
-            <i className={`fas fa-cog wd-gear`} style={{"font-size": "2em"}}></i>
+            <i className={`fas fa-cog wd-gear`} style={{"fontSize": "2em"}}></i>
           </a>
         </div>
       </div>

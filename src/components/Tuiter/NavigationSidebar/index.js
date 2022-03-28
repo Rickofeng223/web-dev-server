@@ -1,7 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
+  // console.log(window.location.href); // window location for url example: http://localhost:3000/tuiter/home
+  // const location = useLocation(); // get the current location
+  // console.log(location.pathname); // /tuiter/home
+  // const locationArray = location.pathname.split("/");
+  // console.log(locationArray);
+  // console.log(locationArray[locationArray.length - 1]);
+  // const currentPart = locationArray[locationArray.length - 1];
+
+  const [currentPart, setCurrentPart] = useState("explore");
+  const linkClick = (clickLinkName) => {
+    setCurrentPart(clickLinkName);
+  };
+
+  
   return (
     <>
       <div className={`list-group`}>
@@ -9,9 +25,10 @@ const NavigationSidebar = ({ active = "explore" }) => {
           <i className={`fab fa-twitter`}></i>
         </Link>
         <Link
+          onClick={() => linkClick("home")}
           to="/tuiter/home"
           className={`list-group-item m list-group-item-action event-target 
-            ${active === "home" ? "active" : ""}`}
+            ${currentPart === "home" ? "active" : ""}`}
         >
           <i className={`fas fa-home`}>
             <p
@@ -23,9 +40,10 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </Link>
 
         <Link
+          onClick={() => linkClick("explore")}
           to="/tuiter/explore"
           className={`list-group-item m list-group-item-action event-target 
-            ${active === "explore" ? "active" : ""}`}
+            ${currentPart === "explore" ? "active" : ""}`}
           aria-current="true"
         >
           <i className={`fas fa-hashtag`}>
@@ -86,11 +104,12 @@ const NavigationSidebar = ({ active = "explore" }) => {
             </p>
           </i>
         </a>
-        
+
         <Link
+          onClick={() => linkClick("profile")}
           to="/tuiter/profile"
           className={`list-group-item m list-group-item-action event-target 
-          ${active === "explore" ? "active" : ""}`}
+          ${currentPart === "profile" ? "active" : ""}`}
           aria-current="true"
         >
           <i className={`fas fa-user`}>
