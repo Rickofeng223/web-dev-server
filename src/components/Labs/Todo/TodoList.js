@@ -3,8 +3,8 @@ import todos from "./todos.json";
 const TodoList = () => {
   return (
     <ul>
-      {todos.map((todo) => {
-        return <TodoItem todo={todo} key={todo.title} />;
+      {todos.map((todo1,key) => {
+        return <TodoItem todo={todo1} key={key} />;
       })}
     </ul>
   );

@@ -8,8 +8,8 @@ const TuitList = () => {
   return (
     <ul className="ttr-tuits list-group">
       {tuits.map &&
-        tuits.map((post) => {
-          return <TuitListItem post={post} key={post.id} />;
+        tuits.map((post,key) => {
+          return <TuitListItem post={post} key={key} />;
         })}
     </ul>
   );
