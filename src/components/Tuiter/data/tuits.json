@@ -14,8 +14,7 @@
     "From": "netflix.com",
     "comment": 32,
     "retweet": 35,
-    "heart": 39,
-    "dislikes": 1
+    "heart": 39
   },
   {
     "_id": "456",
@@ -32,8 +31,7 @@
     "From": "",
     "comment": 96,
     "retweet": 24,
-    "heart": 43,
-    "dislikes": 2
+    "heart": 43
   }
 ]
 

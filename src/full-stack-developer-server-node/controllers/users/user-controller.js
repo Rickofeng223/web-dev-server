@@ -7,6 +7,7 @@ const userController = (app) => {
   app.post("/api/users", createUser);         // create 
   app.delete("/api/users/:uid", deleteUser);   // delete 
   app.put("/api/users/:uid", updateUser);     // update
+  
 };
 
 const createUser = (req, res) => {
