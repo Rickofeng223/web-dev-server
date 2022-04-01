@@ -17,4 +17,3 @@ app.listen(process.env.PORT || 4000); // Configuring Node applications to run re
 app.get("/", (request, response) => {
   response.send("Welcome to Full Stack Development!!!!");
 });
-app.listen(4000);
