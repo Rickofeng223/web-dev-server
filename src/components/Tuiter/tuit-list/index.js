@@ -8,7 +8,7 @@ import "./tuits.css";
 const TuitList = () => {
   const tuits = useSelector((state) => state.tuits);
   const dispatch = useDispatch();
-  useEffect(() => findAllTuits(dispatch),[]);
+  useEffect(() => {findAllTuits(dispatch)},[]);
   // const findAllTuits = async () => {
   //   const tuits = await service.findAllTuits();
   //   const action = {

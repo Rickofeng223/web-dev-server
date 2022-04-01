@@ -1,6 +1,6 @@
 import React from "react";
 import TuitList from "../tuit-list";
-import WhatsHappening from "../whats-happening";
+
 
 const HomeScreen = () => {
   return (
@@ -11,4 +11,3 @@ const HomeScreen = () => {
 };
 export default HomeScreen;
 
-//<WhatsHappening/>
