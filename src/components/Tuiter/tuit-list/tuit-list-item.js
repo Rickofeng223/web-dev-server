@@ -19,7 +19,7 @@ const TuitListItem = ({post}) => {
     <li className={`list-group-item wd-backGround`}>
       <i
         className={"fas fa-times float-end"}
-        onClick={() => deleteTuit(dispatch, post)}
+        onClick={() => deleteTuit(dispatch, post)}      // call from tuits-action.js
       ></i>
       <h5 className={`card-title`}>{post.tuit}</h5>
 

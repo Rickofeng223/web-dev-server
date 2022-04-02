@@ -14,14 +14,14 @@ export const createTuit = async (dispatch, tuit) => {
 };
 
 export const findAllTuits = async (dispatch) => {
-  const tuits = await service.findAllTuits();
+  const tuits = await service.findAllTuits();    
   dispatch({
     type: FIND_ALL_TUITS,
     tuits,
   });
 };
 export const updateTuit = async (dispatch, tuit) => {
-  const status = await service.updateTuit(tuit);
+  const status = await service.updateTuit(tuit);     
   console.log(status);
   
  dispatch({
@@ -30,8 +30,8 @@ export const updateTuit = async (dispatch, tuit) => {
  });
 };
 
-export const deleteTuit = async (dispatch, tuit) => {
-    const response = await service.deleteTuit(tuit);
+export const deleteTuit = async (dispatch, tuit) => {    // will be call from tuit-list-item.js
+    const response = await service.deleteTuit(tuit);    // call from tuits-service.js 
     console.log(response);
     dispatch({
       type: DELETE_TUIT,

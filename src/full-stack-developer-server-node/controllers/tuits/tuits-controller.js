@@ -48,6 +48,6 @@ export default (app) => {
   app.get("/api/tuits", findAllTuits);
   app.put("/api/tuits/:tid", updateTuit);
   app.delete("/api/tuits/:tid", deleteTuit);
-  app.post("/api/users/:uid/tuits", createTuitByUser);
-  app.get("/api/users/:uid/tuits", findTuitsByUser);
+  app.post("/api/users/:uid/tuits", createTuitByUser);    // create tuits by this user   with this user
+  app.get("/api/users/:uid/tuits", findTuitsByUser);     // get tuits by this user      using their user user
 };
