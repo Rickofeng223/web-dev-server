@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTuit,createTuit,updateTuit } from "../../../full-stack-developer-server-node/actions/tuits-actions";
+import { deleteTuit, updateTuit } from "../../../full-stack-developer-server-node/actions/tuits-actions";
 
 import "./tuits.css";
 const TuitListItem = ({post}) => {
