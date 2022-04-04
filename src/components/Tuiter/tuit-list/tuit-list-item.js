@@ -14,51 +14,52 @@ const TuitListItem = ({post}) => {
   //   };
   //   dispatch(action);
   // };
-  const [newTuit, setNewTuit] =  useState({tuit: 'New tuit'});
+  //const [newTuit, setNewTuit] =  useState({tuit: 'New tuit'});
   return (
-    <li className={`list-group-item wd-backGround`}>
-      <i
-        className={"fas fa-times float-end"}
-        onClick={() => deleteTuit(dispatch, post)}      // call from tuits-action.js
-      ></i>
-      <h5 className={`card-title`}>{post.tuit}</h5>
-
-      <textarea
-        className={"form-control w-75"}
-        onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
-      ></textarea>
-
-      <button
-        onClick={() => createTuit(dispatch, newTuit)}
-        className={"btn btn-primary float-end"}
-      >
-        Tuit
-      </button>
-      <div>
-        Likes: {post.likes}
+    <div>
+      <li className={`list-group-item wd-backGround`}>
         <i
-          onClick={() =>
-            updateTuit(dispatch, {
-              ...post,
-              likes: post.likes + 1,
-            })
-          }
-          className="far fa-thumbs-up ms-2"
+          className={"fas fa-times float-end"}
+          onClick={() => deleteTuit(dispatch, post)} // call from tuits-action.js
         ></i>
-      </div>
-      <div>
-        DisLikes: {post.dislikes}
-        <i
-          onClick={() =>
-            updateTuit(dispatch, {
-              ...post,
-              dislikes: post.dislikes - 1,
-            })
-          }
-          className="far fa-thumbs-down ms-2"
-        ></i>
-      </div>
-    </li>
+
+        <h5 className={`card-title`}>{post.tuit}</h5>
+        {/* <button
+          onClick={() => createTuit(dispatch, newTuit)}
+          className={"btn btn-primary float-end"}
+        >
+          Tuit
+        </button> */}
+        {/* <textarea
+          className={"form-control w-75"}
+          onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
+        ></textarea> */}
+        <div>
+          Likes: {post.likes}
+          <i
+            onClick={() =>
+              updateTuit(dispatch, {
+                ...post,
+                likes: post.likes + 1,
+              })
+            }
+            className="far fa-thumbs-up ms-2"
+          ></i>
+        </div>
+        <div>
+          DisLikes: {post.dislikes}
+          <i
+            onClick={() =>
+              updateTuit(dispatch, {
+                ...post,
+                dislikes: post.dislikes - 1,
+              })
+            }
+            className="far fa-thumbs-down ms-2"
+          ></i>
+        </div>
+      </li>
+    </div>
   );
 };
 export default TuitListItem;
