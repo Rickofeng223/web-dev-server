@@ -8,11 +8,11 @@ import cors from 'cors';
 import mongoose from "mongoose";
 
 const mongoAtLasPass = process.env.MONGO_AT_LAS_PASS;
-
 mongoose.connect(
-  "mongodb://localhost:27017/webdev" ||
+  //`mongodb://localhost:27017/webdev` ||
   `mongodb+srv://admin:${mongoAtLasPass}@cluster0.urank.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` 
 );
+
 const app = express();
 app.use(cors());
 helloController(app);
