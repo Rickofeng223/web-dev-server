@@ -73,6 +73,23 @@ const updateTuit = async (req, res) => {
 }
 
 
+// A9 practice
+// const tuitsController = (app) => {
+
+//   const findAllTuits = (req, res) =>
+//     tuitsDao.findAllTuits()
+//       .then(tuits => res.json(tuits));
+//   const createTuit = (req, res) => {}
+//   const deleteTuit = (req, res) => {}
+//   const updateTuit = (req, res) => {}
+
+//   app.get("/api/tuits", findAllTuits);
+//   app.post("/api/tuits", createTuit);
+//   app.delete("/api/tuits", deleteTuit);
+//   app.put("/api/tuits", updateTuit);
+// }
+// export default tuitsController
+
 export default (app) => {
   app.post("/api/tuits", createTuit);
   app.get("/api/tuits", findAllTuits);
