@@ -11,14 +11,7 @@ import * as tuitsDao from "../../mongoose/tuits-dao.js";
 //     res.json(newTuit);
 // };
 
-const createTuitByUser = (req, res) => {
-  const userId = req.params["uid"];
-  let newTuit = req.body;
-  newTuit._id = new Date().getTime() + "";
-  newTuit.postedBy = userId;
-  tuits.push(newTuit);
-  res.json(newTuit);
-};
+
 
 
 // const findAllTuits = (req, res) => {
@@ -36,6 +29,15 @@ const createTuitByUser = (req, res) => {
 //     tuits = tuits.filter(t => t._id !== tuitIdToDelete);
 //     res.sendStatus(200);
 // };
+
+const createTuitByUser = (req, res) => {
+  const userId = req.params["uid"];
+  let newTuit = req.body;
+  newTuit._id = new Date().getTime() + "";
+  newTuit.postedBy = userId;
+  tuits.push(newTuit);
+  res.json(newTuit);
+};
 
 const findTuitsByUser = (req, res) => {
   const userId = req.params["uid"];
@@ -70,6 +72,23 @@ const updateTuit = async (req, res) => {
   res.send(status);
 }
 
+
+// A9 practice
+// const tuitsController = (app) => {
+
+//   const findAllTuits = (req, res) =>
+//     tuitsDao.findAllTuits()
+//       .then(tuits => res.json(tuits));
+//   const createTuit = (req, res) => {}
+//   const deleteTuit = (req, res) => {}
+//   const updateTuit = (req, res) => {}
+
+//   app.get("/api/tuits", findAllTuits);
+//   app.post("/api/tuits", createTuit);
+//   app.delete("/api/tuits", deleteTuit);
+//   app.put("/api/tuits", updateTuit);
+// }
+// export default tuitsController
 
 export default (app) => {
   app.post("/api/tuits", createTuit);
