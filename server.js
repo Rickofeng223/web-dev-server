@@ -21,7 +21,7 @@ userController(app);
 tuitsController(app);
 app.listen(process.env.PORT || 4000); // Configuring Node applications to run remotely on Heroku
 
-REACT_APP_API_BASE; 
+//REACT_APP_API_BASE; 
 //spring-web-dev-server.herokuapp.com/api
 
 https: app.get("/", (request, response) => {
