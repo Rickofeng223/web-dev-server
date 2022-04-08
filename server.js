@@ -9,8 +9,8 @@ import mongoose from "mongoose";
 
 const mongoAtLasPass = process.env.MONGO_AT_LAS_PASS;
 mongoose.connect(
-  `mongodb+srv://admin:${mongoAtLasPass}@cluster0.urank.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` || 
-  `mongodb://localhost:27017/webdev`  
+ //`mongodb://localhost:27017/webdev` ||     
+  `mongodb+srv://admin:${mongoAtLasPass}@cluster0.urank.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` 
 );
 
 const app = express();
@@ -21,9 +21,6 @@ userController(app);
 tuitsController(app);
 app.listen(process.env.PORT || 4000); // Configuring Node applications to run remotely on Heroku
 
-//REACT_APP_API_BASE; 
-//spring-web-dev-server.herokuapp.com/api
-
-https: app.get("/", (request, response) => {
+app.get("/", (request, response) => {
   response.send("Welcome to Full Stack Development!!!!");
 });
